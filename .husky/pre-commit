@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo '🏗️👷 Styling your project before committing 🏗️👷'
+npx lint-staged || (
+    echo '🔨❌ Oops, you have a problem in your code. Check linter 🔨❌
+          Run next lint, add changes and try commit again.';
+    false;
+)
+echo '🎉 No error found: committing this now.... ✨🚀🏄‍♂️🍻'
