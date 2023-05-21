@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "ms-azuretools.vscode-docker",
+    "knisterpeter.vscode-commitizen",
+    "ms-vscode-remote.remote-containers",
+    "gurayyarar.editorenhancements",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "rvest.vs-code-prettier-eslint",
+    "yoavbls.pretty-ts-errors",
+    "ms-vscode.remote-explorer",
+    "bradlc.vscode-tailwindcss",
+    "asuka.insertnumbers"
+  ]
+}

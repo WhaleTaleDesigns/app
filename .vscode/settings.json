@@ -1,3 +1,29 @@
 {
-  "prettier.configPath": "./prettier.config.cjs"
+  "prettier.configPath": "./prettier.config.cjs",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.exclude": {
+    "**/.angular": true,
+    "**/.pnpm-store": true,
+    "**/*.pem": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/package-lock.json": true,
+    "**/pythonFiles/lib": true,
+    "**/pythonFiles/nltk_data": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "editor.formatOnPaste": true,
+  "eslint.format.enable": true,
+  "[html]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "editor.formatOnSave": true,
+  "files.insertFinalNewline": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
 }
