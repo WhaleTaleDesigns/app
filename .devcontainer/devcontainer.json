@@ -9,7 +9,7 @@
   "forwardPorts": [3000],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "git clone git@github.com:WhaleTaleDesigns/app.git /workspace && fish /workspace/app/.devcontainer/install-dev-tools.fish",
+  "postCreateCommand": "chmod 777 /workspace && git clone git@github.com:WhaleTaleDesigns/app.git /workspace && fish /workspace/app/.devcontainer/install-dev-tools.fish",
   // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
     "ghcr.io/devcontainers-contrib/features/pnpm:2": {
