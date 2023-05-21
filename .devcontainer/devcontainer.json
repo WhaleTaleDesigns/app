@@ -49,8 +49,6 @@
     }
   },
   "workspaceMount": "source=workspace-volume,target=/workspace,type=volume",
-  "workspaceFolder": "/workspace"
-
-  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-  // "remoteUser": "root"
+  "workspaceFolder": "/workspace",
+  "remoteUser": "root"
 }
