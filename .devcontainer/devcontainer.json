@@ -9,7 +9,7 @@
   "forwardPorts": [3000],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  // "postCreateCommand": "fish ./.devcontainer/install-dev-tools.fish",
+  "postCreateCommand": "git clone git@github.com:WhaleTaleDesigns/app.git /workspace && fish /workspace/app/.devcontainer/install-dev-tools.fish",
   // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
     "ghcr.io/devcontainers-contrib/features/pnpm:2": {
@@ -48,7 +48,7 @@
       ]
     }
   },
-  "workspaceMount": "source=app-volume,target=/workspace,type=volume",
+  "workspaceMount": "source=workspace-volume,target=/workspace,type=volume",
   "workspaceFolder": "/workspace"
 
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
